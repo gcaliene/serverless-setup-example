@@ -4,7 +4,14 @@
   "description": "Sample repo demonstrating the deployment of separate AWS serverless environments using one repo.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serverless offline start --stage staging",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install",
+    "version:start": "npm version patch --no-git-tag-version",
+    "version:add": "npm run version:start && git add package.json package-lock.json ",
+    "deploy:staging": "sls deploy --stage staging",
+    "deploy:production": "sls deploy --stage production"
   },
   "repository": {
     "type": "git",
@@ -23,7 +30,7 @@
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "serverless": "^1.63.0",
+    "serverless": "~1.51.0",
     "serverless-offline": "^5.12.1",
     "serverless-plugin-aws-alerts": "^1.4.0"
   }
