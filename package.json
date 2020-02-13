@@ -1,0 +1,30 @@
+{
+  "name": "serverless-setup-example",
+  "version": "1.0.0",
+  "description": "Sample repo demonstrating the deployment of separate AWS serverless environments using one repo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcaliene/serverless-setup-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gcaliene/serverless-setup-example/issues"
+  },
+  "homepage": "https://github.com/gcaliene/serverless-setup-example#readme",
+  "dependencies": {
+    "aws-sdk": "^2.618.0",
+    "bunyan": "^1.8.12",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "serverless": "^1.63.0",
+    "serverless-offline": "^5.12.1",
+    "serverless-plugin-aws-alerts": "^1.4.0"
+  }
+}
