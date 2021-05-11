@@ -27,7 +27,7 @@
     "aws-sdk": "^2.618.0",
     "bunyan": "^1.8.12",
     "dotenv": "^8.2.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "serverless": "~1.51.0",
